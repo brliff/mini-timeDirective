@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timeApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body ng-controller="mainCtrl">
+  {{ name }}
+  <show-time></show-time>
+  <h2>{{time}}</h2>
+  <p>Posted:
+    <span am-time-ago="time"></span>
+  </p>
+  <p>Utah: </p>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.5/moment-timezone.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.5/moment-timezone-with-data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.0/angular-moment.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.0/angular-moment.min.js.map"></script>-->
+  <script src="js\app.js"></script>
+  <script src="js\mainCtrl.js"></script>
+  <script src="js\timeDirective.js"></script>
+</body>
+</html>
